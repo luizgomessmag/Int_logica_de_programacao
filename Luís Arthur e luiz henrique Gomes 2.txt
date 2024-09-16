@@ -1,0 +1,179 @@
+Algoritmo"1"
+// Disciplina   : [Introdução a Lógica de Programação]
+// Professor   : Larissa Ribeiro
+// Descrição   : Calcular a soma dos numeros de 1 a 20 usando comando de repetição
+// Autor(a)    : Luiz Henrique Gomes e Luís Arthur.
+// Data atual  : 12/09/2024
+Var
+// Seção de Declarações das variáveis 
+N1,N2:inteiro
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+  N1<-1
+  enquanto N1<=20 faca
+  N2<-N2+N1
+  N1<-N1+1
+  fimenquanto
+  escreval(N2)
+
+Fimalgoritmo
+________________________________________________________________________________________________________________________________________________________________________________
+
+Algoritmo "2"
+// Disciplina   : [Introdução a Lógica de Programação]
+// Professor   : Larissa Ribeiro
+// Descrição   : Escrever os numeros pares existente entre 1 e 20
+// Autor(a)    : Luiz Henrique Gomes e Luís Arthur.
+// Data atual  : 12/09/2024
+Var
+// Seção de Declarações das variáveis 
+N1,N2:inteiro
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+  N1<-1
+  N2<-0
+  enquanto N1<=20 faca
+  N2<-N2+1
+  se N2%2=0 então
+  escreval(N2)
+  fimse
+  N1<-N1+1
+ fimenquanto
+Fimalgoritmo
+________________________________________________________________________________________________________________________________________________________________________________
+
+
+Algoritmo "3"
+// Disciplina   : [Introdução a Lógica de Programação]
+// Professor   : Larissa Ribeiro
+// Descrição   : Ler seu numero e calcular seu fatorial
+// Autor(a)    : Luiz Henrique Gomes e Luís Arthur.
+// Data atual  : 12/09/2024
+Var
+// Seção de Declarações das variáveis
+Cont,Cont2:inteiro
+Fato:inteiro
+N:inteiro
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+ escreval("digite um numero para calcular seu fatorial: ")
+ leia(Fato)
+ Cont<-Fato
+ N<-1
+ Cont2<-1
+ enquanto Cont2<Cont faca
+ Fato<-Fato*N
+ N<-N+1
+ Cont2<-Cont2+1
+ fimenquanto
+ escreval(Fato)
+ 
+ 
+ 
+Fimalgoritmo
+________________________________________________________________________________________________________________________________________________________________________________
+
+
+Algoritmo "4"
+// Disciplina   : [Introdução a Lógica de Programação]
+// Professor   : Larissa Ribeiro
+// Descrição   : Ler 10 números do usuário e calcule a média
+// Autor(a)    : Luiz Henrique Gomes e Luís Arthur.
+// Data atual  : 12/09/2024
+Var
+// Seção de Declarações das variáveis
+Media,numero,cont:real
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+cont<-1
+enquanto cont<=10 faca
+escreval("escreva um numero:")
+leia(numero)
+media<-media+numero
+cont<-cont+1
+fimenquanto
+media<-media/10
+escreval (media)
+Fimalgoritmo
+________________________________________________________________________________________________________________________________________________________________________________
+
+
+Algoritmo "5"
+// Disciplina   : [Introdução a Lógica de Programação]
+// Professor   : Larissa Ribeiro
+// Descrição   :Ler a idade de várias pessoas e calcular a média das idades. Encerar a execução quando valor negativo for digitado
+// Autor(a)    : Luiz Henrique Gomes e Luís Arthur.
+// Data atual  : 12/09/2024
+Var
+// Seção de Declarações das variáveis
+Idade,media,cont,divi:real
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+cont<-1
+divi<-0
+enquanto Idade>=0 faca
+media<-media+Idade
+divi<-divi+1
+escreval("digite uma idade: ")
+leia(idade)
+fimenquanto
+media<-media/(divi-1)
+escreval(media)
+Fimalgoritmo
+________________________________________________________________________________________________________________________________________________________________________________
+
+
+Algoritmo "6"
+// Disciplina   : [Introdução a Lógica de Programação]
+// Professor   : Larissa Ribeiro
+// Descrição   : leia uma sequência de números do usuário e escreva o dobro de cada número lido. Encerre a execução quando o número digitado for negativo.
+// Autor(a)    : Luiz Henrique Gomes e Luís Arthur.
+// Data atual  : 12/09/2024
+Var
+// Seção de Declarações das variáveis
+num,cont:inteiro
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+enquanto num>=0 faca
+num<-num*2
+escreval ("O dobro é:", num)
+escreval("digite um numero:")
+leia(num)
+fimenquanto
+Fimalgoritmo
+________________________________________________________________________________________________________________________________________________________________________________
+Algoritmo "semnome"
+// Disciplina   : [Introdução a Lógica e Programação]
+// Professor   : Larissa Ribeiro
+// Descrição   : Solicitar ao usuário login e senha, caso login e senha errados pedir para inserir novamente, caso certo exibir a mensagem "bem - vindo ao sistema". login:ADMIN senha:ADMIN123
+// Autor(a)    : Luís Arthur e Luiz Henrique Gomes
+// Data atual  : 16/09/2024
+Var
+// Seção de Declarações das variáveis 
+ Login: caractere
+ senha: caractere
+ vf:logico
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc...
+vf<-falso
+enquanto vf=falso faca
+escreval("login: ")
+leia(login)
+escreval("senha: ")
+leia(senha)
+se login="admin" então
+se senha="admin123" então
+escreval("bem-vindo ao sistema")
+vf<-verdadeiro
+fimse
+senão
+escreval("login ou senha incoreto")
+fimse
+fimenquanto
+
+
+
+Fimalgoritmo
+________________________________________________________________________________________________________________________________________________________________________________
